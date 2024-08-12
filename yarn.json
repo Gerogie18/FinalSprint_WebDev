@@ -2,7 +2,6 @@
     {
         "yarn": [
             {
-            "000001": {
                 "brand": "Cascade",
                 "product_line": "220 Superwash",
                 "colorway": "204 Smoke Blue",
@@ -26,9 +25,8 @@
                 "dye": "False",  
                 "unfinished_project": [],
                 "finished_project": [230401]
-            }     },
+            },
             {
-            "000002": {
                 "brand": "Cascade",
                 "product_line": "220 Superwash",
                 "colorway": "900 Charcoal",
@@ -52,10 +50,8 @@
                 "dye": "False",  
                 "unfinished_project": [],
                 "finished_project": []
-                }    
             },
             {    
-            "000003": {
                 "brand": "Knit Picks",
                 "product_line": "Stroll",
                 "colorway": "25603 - Dogwood Heather",
@@ -78,11 +74,9 @@
                 },
                 "dye": "False",  
                 "unfinished_project": [120401],
-                "finished_project": []
-                }    
+                "finished_project": []   
             },
             {    
-            "000004": {
                 "brand": "Knit Picks",
                 "product_line": "Stroll",
                 "colorway": "26082 - White",
@@ -105,11 +99,9 @@
                 },
                 "dye": "True",  
                 "unfinished_project": [],
-                "finished_project": []
-                }    
+                "finished_project": []   
             },
             {    
-            "000005": {
                 "brand": "Knit Picks",
                 "product_line": "Dishie",
                 "colorway": "28089 - Friendship Bracelet Multi",
@@ -133,10 +125,8 @@
                 "dye": "False",  
                 "unfinished_project": [],
                 "finished_project": []
-                }
             },
             {
-            "000006": {
                 "brand": "Knit Picks",
                 "product_line": "Dishie",
                 "colorway": "25788 - Kenai",
@@ -160,7 +150,6 @@
                 "dye": "False",  
                 "unfinished_project": ["240704"],
                 "finished_project": ["240701", "240702", "240703"]
-                }
             }
         ]
     }
