@@ -1,6 +1,6 @@
 // Function to describe brand, product line, and color of yarn
 function describeBrandProductandColour(yarn) {
-    return `$${yarn.brand} ${yarn.product_line}: <br/>${yarn.colorway}`;
+    return `${yarn.brand} ${yarn.product_line}: <br />${yarn.colorway}`;
 }
 
 // Function to describe care information
@@ -53,7 +53,7 @@ fetch('yarn.json')
         for (const yarnName in data.yarn) {
             if (data.yarn.hasOwnProperty(yarnName)) {
                 const yarn = data.yarn[yarnName];
-                const brandProductandColour = `${yarn.brand} ${yarn['product-line']}: ${yarn.colorway}`;
+                const brandProductandColour = describeBrandProductandColour(yarn);
                 const careInstructions = describeCareInstructions(yarn);
                 purchases += listPurchases(yarn); // Append each purchase list to the purchases string
                 const yarnDescription = document.createElement('div');
