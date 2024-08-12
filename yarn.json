@@ -1,0 +1,168 @@
+
+    {
+        "yarn": [
+            {
+            "000001": {
+                "brand": "Cascade",
+                "product-line": "220 Superwash",
+                "colorway": "204 Smoke Blue",
+                "weight": "4",
+                "fibre-content": "100% superwash wool",
+                "tag": ["Wool", "DK"],
+                "wpi": "9",
+                "description": "This is a light worsted, DK weight, 100% Superwash Wool yarn. It is natural fiber that is machine washable and dryable ",
+                "available(grams)": "50",
+                "care": {
+                    "machine-wash": "True",
+                    "wash": "Machine wash cold",
+                    "dry": "tuble dry"
+                },
+                "purchase": {
+                    "date": ["2023-10-12", "2024-10-20"],
+                    "quantity(grams)": ["200", "100"],
+                    "Cost": ["18.98", "9.99"],
+                    "dye-lot": ["128", "200"]
+                },
+                "dye": "False",  
+                "unfinished-project": [],
+                "finished-project": [230401]
+                }
+            },
+            {
+            "000002": {
+                "brand": "Cascade",
+                "product-line": "220 Superwash",
+                "colorway": "900 Charcoal",
+                "weight": "4",
+                "fibre-content": "100% superwash wool",
+                "tag": ["Wool", "DK"],
+                "wpi": "9",
+                "description": "This is a light worsted, DK weight, 100% Superwash Wool yarn. It is natural fiber that is machine washable and dryable ",
+                "available(grams)": "100",
+                "care": {
+                    "machine-wash": "True",
+                    "wash": "Machine wash cold",
+                    "dry": "tuble dry"
+                },
+                "purchase": {
+                    "date": ["2023-10-12"],
+                    "quantity(grams)": ["100"],
+                    "Cost": ["9.99"],
+                    "dye-lot": ["2020"]
+                },
+                "dye": "False",  
+                "unfinished-project": [],
+                "finished-project": []
+                }    
+            },
+            {    
+            "000003": {
+                "brand": "Knit Picks",
+                "product-line": "Stroll",
+                "colorway": "25603 - Dogwood Heather",
+                "weight": "1",
+                "fibre-content": "75% Fine Superwash Merino Wool, 25% Nylon",
+                "tag": ["Wool", "Nylon", "Fingering", "Sock"],
+                "wpi": "14",
+                "description": "high-grade merino/nylon blend show off texture, lace and cables without distraction. Warm, cushy and versatile.",
+                "available(grams)": "50",
+                "care": {
+                    "machine-wash": "True",
+                    "wash": "Machine wash gentle cold",
+                    "dry": "Tumble dry low"
+                },
+                "purchase": {
+                    "date": ["2023-09-01"],
+                    "quantity(grams)": ["150"],
+                    "Cost": ["15.99"],
+                    "dye-lot": ["2918"]
+                },
+                "dye": "False",  
+                "unfinished-project": [120401],
+                "finished-project": []
+                }    
+            },
+            {    
+            "000004": {
+                "brand": "Knit Picks",
+                "product-line": "Stroll",
+                "colorway": "26082 - White",
+                "weight": "1",
+                "fibre-content": "75% Fine Superwash Merino Wool, 25% Nylon",
+                "tag": ["Wool", "Nylon", "Fingering", "Sock"],
+                "wpi": "14",
+                "description": "high-grade merino/nylon blend show off texture, lace and cables without distraction. Warm, cushy and versatile.",
+                "available(grams)": "150",
+                "care": {
+                    "machine-wash": "True",
+                    "wash": "Machine wash gentle cold",
+                    "dry": "Tumble dry low"
+                },
+                "purchase": {
+                    "date": ["2023-09-01"],
+                    "quantity(grams)": ["150"],
+                    "Cost": ["15.99"],
+                    "dye-lot": ["1290"]
+                },
+                "dye": "True",  
+                "unfinished-project": [],
+                "finished-project": []
+                }    
+            },
+            {    
+            "000005": {
+                "brand": "Knit Picks",
+                "product-line": "Dishie",
+                "colorway": "28089 - Friendship Bracelet Multi",
+                "weight": "4",
+                "fibre-content": "100% Cotton",
+                "tags": ["Cotton", "Worsted", "Dishcloth"],
+                "wpi": "9",
+                "description": "Dishie is a worsted weight cotton yarn that has a tight spin and high absorbency.  Dye-fast",
+                "available(grams)": "100",
+                "care": {
+                    "machine-wash": "True",
+                    "wash": "Machine wash gentle cold",
+                    "dry": "Tumble dry low"
+                },
+                "purchase": {
+                    "date": ["2023-02-20", "2024-07-01"],
+                    "quantity(grams)": ["100", "100"],
+                    "Cost": ["5.99", "5.99"],
+                    "dye-lot": []
+                },
+                "dye": "False",  
+                "unfinished-project": [],
+                "finished-project": []
+                }
+            },
+            {
+            "000006": {
+                "brand": "Knit Picks",
+                "product-line": "Dishie",
+                "colorway": "25788 - Kenai",
+                "weight": "4",
+                "fibre-content": "100% Cotton",
+                "tags": ["Cotton", "Worsted", "Dishcloth"],
+                "wpi": "9",
+                "description": "Dishie is a worsted weight cotton yarn that has a tight spin and high absorbency.  Dye-fast",
+                "available(grams)": "25",
+                "care": {
+                    "machine-wash": "True",
+                    "wash": "Machine wash gentle cold",
+                    "dry": "Tumble dry low"
+                },
+                "purchase": {
+                    "date": ["2023-02-20", "2024-07-01"],
+                    "quantity(grams)": ["100", "100"],
+                    "Cost": ["5.99", "5.99"],
+                    "dye-lot": ["12222"]
+                },
+                "dye": "False",  
+                "unfinished-project": ["240704"],
+                "finished-project": ["240701", "240702", "240703"]
+                }
+            }
+        ]
+    }
+
