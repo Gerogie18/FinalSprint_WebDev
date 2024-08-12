@@ -1,6 +1,6 @@
 // Function to describe brand, product line, and color of yarn
 function describeBrandProductandColour(yarn) {
-    return `${yarn.brand} ${yarn.product_line}: ${yarn.colorway}`;
+    return `$${yarn.brand} ${yarn.product_line}: <br/>${yarn.colorway}`;
 }
 
 // Function to describe care information
@@ -32,6 +32,10 @@ fetch('yarn.json')
     .then(response => response.json())
     .then(data => {
         console.log(data);
+        
+        const mainContainer = document.createElement('div'); // Create a new main container
+        mainContainer.classList.add('main-container'); // Optionally add a class for styling
+
         const container = document.createElement('div');
         const tableContainer = document.createElement('div'); // Create a new div for the table
 
@@ -53,9 +57,10 @@ fetch('yarn.json')
                 const careInstructions = describeCareInstructions(yarn);
                 purchases += listPurchases(yarn); // Append each purchase list to the purchases string
                 const yarnDescription = document.createElement('div');
+                yarnDescription.classList.add('yarn');
                 yarnDescription.innerHTML = `
                     <h2>${brandProductandColour}</h2>
-                    <div>${careInstructions}</div>
+                    <div class="care">${careInstructions}</div>
                 `;
                 container.appendChild(yarnDescription);
             }
@@ -64,7 +69,10 @@ fetch('yarn.json')
         purchases += '</table></div>'; // Close the table structure
         tableContainer.innerHTML = purchases; // Set the tableContainer's innerHTML to the complete table
         container.appendChild(tableContainer); // Append the table container to the main container
-        document.body.appendChild(container);
+
+        mainContainer.appendChild(container); // Append the container to the main container
+        document.body.appendChild(mainContainer); // Append the main container to the document body
+        mainContainer.classList.add('mainContainer'); // Add a class to the main
     })
     .catch(error => {
         console.error('Error fetching data from yarn library json file', error);
