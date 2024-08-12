@@ -1,14 +1,14 @@
 // Function to describe brand, product line, and color of yarn
 function describeBrandProductandColour(yarn) {
-    return `${yarn.brand} ${yarn['product-line']}: ${yarn.colorway}`;
+    return `${yarn.brand} ${yarn.product_line}: ${yarn.colorway}`;
 }
 
 // Function to describe care information
 function describeCareInstructions(yarn) {
     if (yarn.care && yarn.care.machine_wash === "True") {
-        return `<h3>Machine Washable</h3><p>Wash: ${yarn.care.wash} Dry: ${yarn.care.dry}</p>`;
+        return `<h3>Machine Washable</h3><p>Wash: ${yarn.care.wash}<br />Dry: ${yarn.care.dry}</p>`;
     } else {
-        return `<h4>Hand Wash Only</h4><p>Wash: ${yarn.handwash} Dry: ${yarn.dry}</p>`;
+        return `<h4>Hand Wash Only</h4><p>Wash: ${yarn.handwash}<br />Dry: ${yarn.dry}</p>`;
     }
 }
 
@@ -18,9 +18,7 @@ function listPurchases(yarn) {
     for (let i = 0; i < yarn.purchase.date.length; i++) {
         purchaseRow += `
             <tr>
-                <td>${yarn.brand}</td>
-                <td>${yarn['product-line']}</td>
-                <td>${yarn.colorway}</td>
+                <td>${yarn.brand} ${yarn.product_line}: ${yarn.colorway}</td>
                 <td>${yarn.purchase.date[i]}</td>
                 <td>$${yarn.purchase.cost[i]}</td>
                 <td>${yarn.purchase.quantity_grams[i]}g</td>
@@ -30,16 +28,6 @@ function listPurchases(yarn) {
     return purchaseRow;
 }
 
-let purchases = `
-        <div>
-            <table>
-                <tr>
-                    <th>Yarn</th>
-                    <th>Date</th>
-                    <th>Cost</th>
-                    <th>Quantity</th>
-                </tr>`;
-
 fetch('yarn.json')
     .then(response => response.json())
     .then(data => {
@@ -47,22 +35,34 @@ fetch('yarn.json')
         const container = document.createElement('div');
         const tableContainer = document.createElement('div'); // Create a new div for the table
 
+        // Initialize the table structure
+        let purchases = `
+            <div>
+                <table>
+                    <tr>
+                        <th>Yarn</th>
+                        <th>Date</th>
+                        <th>Cost</th>
+                        <th>Quantity (grams)</th>
+                    </tr>`;
+
         for (const yarnName in data.yarn) {
             if (data.yarn.hasOwnProperty(yarnName)) {
                 const yarn = data.yarn[yarnName];
                 const brandProductandColour = `${yarn.brand} ${yarn['product-line']}: ${yarn.colorway}`;
                 const careInstructions = describeCareInstructions(yarn);
-                purchases += listPurchases(yarn);
+                purchases += listPurchases(yarn); // Append each purchase list to the purchases string
                 const yarnDescription = document.createElement('div');
                 yarnDescription.innerHTML = `
                     <h2>${brandProductandColour}</h2>
                     <div>${careInstructions}</div>
                 `;
                 container.appendChild(yarnDescription);
-                tableContainer.innerHTML += purchases; // Append each purchase list to the table container
             }
         }
-purchases += '</table> </div>';
+
+        purchases += '</table></div>'; // Close the table structure
+        tableContainer.innerHTML = purchases; // Set the tableContainer's innerHTML to the complete table
         container.appendChild(tableContainer); // Append the table container to the main container
         document.body.appendChild(container);
     })
